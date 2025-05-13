@@ -1,6 +1,7 @@
 package com.javaex.ex05;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class MyListApp {
 	
@@ -13,9 +14,10 @@ public class MyListApp {
 		
 		//포인트 관리////////////////////////////////
 		//포인트 리스트
-		
-		LinkedList<Point> pList = new LinkedList<Point>();
-		//--> 부모를 인터페이스로 둔경우 호환성을 염두했을
+		//ArrayList<Point> pList = new ArrayList<Point>()  //ArrayList만가지고 있는 메소드 사용가능
+		//List<Point> pList = new ArrayList<Point>(); //List(인터페이스) 에 정의된 메소드만 사용가능
+		List<Point> pList = new LinkedList<Point>();
+		//--> 부모를 인터페이스로 둔경우 호환성을 염두했을 가능성이 높음
 		//--> 섞어쓰기를 해서 인터페이스에 있는 메소드만으로 구현
 		
 		//포인트
@@ -37,6 +39,8 @@ public class MyListApp {
 		System.out.println(pList.get(0).getX());
 		System.out.println(pList.size());
 		pList.remove(0);
+		
+		System.out.println(pList.toString());
 		
 	}
 

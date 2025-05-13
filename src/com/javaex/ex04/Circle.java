@@ -16,7 +16,6 @@ public class Circle {
 	}
 	
 	//메소드 gs
-
 	public int getRadius() {
 		return radius;
 	}

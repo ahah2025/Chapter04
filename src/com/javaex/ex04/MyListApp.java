@@ -18,6 +18,7 @@ public class MyListApp {
 		Point p03 = new Point(4,4);
 		
 		//포인트리스트에 포인트(주소)를 넣는다
+		//메모리를 낭비없이 관리한다
 		pList.add(p01);
 		pList.add(p02);
 		pList.add(p03);
@@ -28,35 +29,41 @@ public class MyListApp {
 		for(int i=0; i<pList.size(); i++) {
 			System.out.println(pList.get(i).toString());
 		}
-		System.out.println(pList.toString());
+		
+		
 		System.out.println("-----------------------------------");
+		
 		//원 관리////////////////////////////////
 		//원 리스트
-		
 		ArrayList<Circle> cList = new ArrayList<Circle>();
 		
 		//원리스트 포인트주소를 추가하면 안된다
 		Circle c01= new Circle(10);
 		Circle c02= new Circle(20);
-		Circle c03= new Circle(30);
 		
+		//원리스트에 원(주소)를 넣는다
+		//메모리를 낭비없이 관리한다
 		cList.add(c01);
 		cList.add(c02);
+		//cList.add(p01); //Circle 이외의 다른것은 넣을 수 없다
+		
+		for(int a=0; a<cList.size() ; a++) {
+			System.out.println(cList.get(a).toString());
+		}
+		System.out.println("------------------------");
+		
+		Circle c03 = new Circle(30);
 		cList.add(c03);
-		
-		Circle c = cList.get(0);
-		System.out.println(c.toString());
-		
-		for(int a=0; a<cList.size() ; a++) {
-			System.out.println(cList.get(0).toString());
+		for(int i=0; i<cList.size(); i++) {
+			System.out.println(cList.get(i).toString());
 		}
-		System.out.println("------------------------");
-		cList.remove(1); //1번방을 지워라
+		System.out.println("-----------------------");
 		
-		for(int a=0; a<cList.size() ; a++) {
-			System.out.println(cList.get(0).toString());
+		cList.remove(1);   //1번방을 지워라
+		for(int i=0; i<cList.size(); i++) {
+			System.out.println(cList.get(i).toString());
 		}
-		System.out.println("------------------------");
+		System.out.println("-----------------------");
 		
 		System.out.println(cList.toString());
 		

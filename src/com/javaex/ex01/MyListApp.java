@@ -61,6 +61,10 @@ public class MyListApp {
 			System.out.println(cList.get(i).toString());
 		}
 		
+		//PointList,  CircleList, TriangleList, RectangleList ....
+		//MyList  하나로 만들면 좋지않을까?
+		//Point  --> Object
+		
 	}
 	
 }

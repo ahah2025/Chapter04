@@ -1,6 +1,6 @@
 package com.javaex.ex03;
 
-public class Myapp {
+public class MyApp {
 
 	public static void main(String[] args) {
 		//*포인트 포인트별로 관리, 원은 원별로 관리
@@ -30,6 +30,12 @@ public class Myapp {
 		Circle c02 = new Circle(20);
 		Circle c03 = new Circle(30);
 
+		//원 리스트에 원(주소) 넣기
+		cList.add(c01);
+		cList.add(c02);
+		//cList.add(p01);  Point 주소를 넣으면 에러발생
+		cList.add(c03);
+		
 		//출력
 		for(int i=0; i<cList.size(); i++) {
 			System.out.println(cList.get(0).toString());

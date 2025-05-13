@@ -19,11 +19,12 @@ public class PointList {
 		this.pArr[crtPos] = p;
 		this.crtPos++;
 	}
-
+	
 	public Point get(int i) {
 		return pArr[i];
 	}
-
+	
+	
 	public int size() {
 		return crtPos;
 	}

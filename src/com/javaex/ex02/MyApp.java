@@ -46,7 +46,7 @@ public class MyApp {
 		//출력
 		for(int i=0; i<cList.size(); i++) {
 			System.out.println(cList.get(i).toString());
-			//System.out.println(((Circle)cList.get(i)).toString());
+			//System.out.println(((Circle)cList.get(i)).getRadius());
 		}
 		
 		
