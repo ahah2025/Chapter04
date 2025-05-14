@@ -16,7 +16,7 @@ public class PointApp {
 		Point p03 = new Point(2,1);   //33333 -> 3
 		Point p04 = new Point(1,2);   //44444 -> 3
 		
-		Point p05 = new Point(0,3);   //55555-> 3  주소 -> x+y
+		Point p05 = new Point(0,3);   //55555-> 3 			 주소 -> x+y
 		
 		pSet.add(p01);
 		pSet.add(p02);

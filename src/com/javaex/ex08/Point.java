@@ -57,30 +57,28 @@ public class Point {
 			return false;
 		if (getClass() != obj.getClass()) //다른 종족을 비교할 경우
 			return false;
-		Point other = (Point) obj;
+		
+		Point p = (Point) obj;    //진짜 비교해야 할 경우
 		return this.x == p.x && this.y == p.y;
 	}
- 
-	
-	
+
 	/*
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+		
+		Point p = (Point)obj;
+		if(this.x == p.x && this.y == p.y) {
 			return true;
-		if (obj == null)
+		
+		}else {
 			return false;
-		if (getClass() != obj.getClass())
-			return false;
-			
-		Point p = (Point) obj;
-		return this.x == this.x && p.y == this.y;
-	} 
-	 
+		}
+	}
+	
 	@Override
 	public int hashCode() {
-		int Code = this.x + this.y;
-		return Code;
+		int code = this.x * this.y;
+		return code;
 	}
 	*/
 }
