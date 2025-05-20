@@ -28,7 +28,7 @@ public class Ex02 {
 			
 		}
 		
-		System.out.println("-----------------------------------------");
+		System.out.println("---------------------------------------------");
 		//출력
 		for( int no : iSet ) {
 			System.out.print(no+"\t");
